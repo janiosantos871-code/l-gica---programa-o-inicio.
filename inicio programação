@@ -29,3 +29,20 @@ elif febre == "nao":
         print("Possível infecção de garganta. Monitore.")
     elif dor == "nao":
         print("Sintomas não conclusivos. Continue observando.")
+#Outro exemplo
+print("Bem vindo a companhia aérea Viagem Segura.")
+mala = input("Quantas malas? ")
+if mala == '1':
+    print("Sem custo extra da bagagem.")
+elif mala == '2':
+    categoria = input("Qual a sua categoria?").lower()
+    if categoria == 'prata':
+        print("Custo de bagagem: 60$")
+    elif categoria == 'ouro':
+        print("Custo de bagagem: 0$")
+    elif categoria == 'diamante':
+        print("Custo de bagagem: 0$")
+    elif categoria == 'nenhuma':      
+        print("Custo de bagagem: 120$ ")
+else:
+    print("Número de malas inválido para esta simulação.")
