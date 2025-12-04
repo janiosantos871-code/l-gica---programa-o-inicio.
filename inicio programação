@@ -29,7 +29,9 @@ elif febre == "nao":
         print("Possível infecção de garganta. Monitore.")
     elif dor == "nao":
         print("Sintomas não conclusivos. Continue observando.")
+
 #Outro exemplo
+
 print("Bem vindo a companhia aérea Viagem Segura.")
 mala = input("Quantas malas? ")
 if mala == '1':
@@ -46,3 +48,23 @@ elif mala == '2':
         print("Custo de bagagem: 120$ ")
 else:
     print("Número de malas inválido para esta simulação.")
+
+#processamento com if else e elif
+
+quarto = input("Qual seu tipo de quarto? ").lower()
+diaria = int(input("Quantas diarias? "))
+uti = input("Teve uso da UTI? ").lower()
+
+if quarto == "particular":
+    custo = 500
+elif quarto == "semi particular":
+    custo = 350
+elif quarto == "coletivo":
+    custo = 200
+else:
+    print("Tipo de quarto invalido.")
+#processamento
+total = custo * diaria
+if uti == "sim":
+    total += 1200
+print(f'Seu custo de internação foi de: {total:,.2f}')
