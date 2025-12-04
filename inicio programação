@@ -1,3 +1,4 @@
+#IF, ELISE E ELSE.
 print("Bem vindo à Clinica Viver.")
 febre = input("O paciente tem febre? ")
 
@@ -22,6 +23,7 @@ if febre == "sim":
 
 elif febre == "nao":
     dor = input("O paciente tem dor na garganta? ")
+
 
     if dor == "sim":
         print("Possível infecção de garganta. Monitore.")
