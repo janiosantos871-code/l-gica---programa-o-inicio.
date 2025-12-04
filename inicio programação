@@ -1,0 +1,29 @@
+print("Bem vindo à Clinica Viver.")
+febre = input("O paciente tem febre? ")
+
+if febre == "sim":
+    tosse = input("O paciente tem tosse? ")
+
+    if tosse == "sim":
+        faltaar = input("O paciente sente falta de ar? ")
+
+        if faltaar == "sim":
+            print("Suspeita de pneumonia. Procure um médico imediatamente.")
+        elif faltaar == "nao":
+            print("Pode ser uma gripe ou resfriado forte.")
+
+    elif tosse == "nao":
+        mancha = input("O paciente tem manchas vermelhas na pele? ")
+
+        if mancha == "sim":
+            print("Suspeita de dengue ou zika. Procure um médico.")
+        elif mancha == "nao":
+            print("Febre de causa indeterminada. Monitore.")
+
+elif febre == "nao":
+    dor = input("O paciente tem dor na garganta? ")
+
+    if dor == "sim":
+        print("Possível infecção de garganta. Monitore.")
+    elif dor == "nao":
+        print("Sintomas não conclusivos. Continue observando.")
